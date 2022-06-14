@@ -1,0 +1,107 @@
+input {
+	outline: none;
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+input[type=search] {
+	padding: 9px 10px 9px 32px;
+	width: 190px;
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	
+	-webkit-border-radius: 10em;
+	   -moz-border-radius: 10em;
+	        border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	        transition: all .5s;
+}
+input[type=search]:focus {
+	width: 330px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	   -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	        box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.search-wrapper{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+
+}
+.create-products{
+     height:42px;
+     width:15%;
+     background-color: #61dafb;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color:#ffffff;
+     font-weight: 600;
+     border-radius: 12px;
+     margin-left: 50px;
+     cursor: pointer;
+     
+}
+
+.card-wrapper{
+  width:100%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  width:40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
